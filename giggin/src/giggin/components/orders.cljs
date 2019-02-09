@@ -31,7 +31,7 @@
              [:div.price (format-price (* (get-in @state/gigs [id :price]) quant))]
              [:button.btn.btn--link.tooltip
               {:data-tooltip "Remove"
-               :on-click #(remove-from-order id)}
+               :on-click     #(remove-from-order id)}
               [:i.icon.icon--cross]]]])]
         [:div.total
          [:hr]
@@ -41,6 +41,6 @@
            [:div.price (format-price (total))]]
           [:button.btn.btn--link.tooltip
            {:data-tooltip "Remove all"
-            :on-click #(remove-all-orders)}
+            :on-click     #(remove-all-orders)}
            [:i.icon.icon--delete]]]
          [checkout-modal]]])]))

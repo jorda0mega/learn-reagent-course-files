@@ -16,5 +16,5 @@
 (defn ^:export main
   []
   (r/render
-    [app]
-    (.getElementById js/document "app")))
+   [app]
+   (.getElementById js/document "app")))

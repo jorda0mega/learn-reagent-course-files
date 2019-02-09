@@ -6,16 +6,12 @@
 
  :nrepl        {:port 3333}
 
- :builds
- {:app {:target :browser
-        :output-dir "public/js"
-        :asset-path "/js"
+ :builds       {:app {:target     :browser
+                      :output-dir "public/js"
+                      :asset-path "/js"
 
-        :modules
-        {:main
-         {:entries [giggin.core]}}
+                      :modules    {:main {:entries [giggin.core]}}
 
-        :devtools
-        {:after-load  giggin.core/main
-         :http-root   "public"
-         :http-port   3000}}}}
+                      :devtools   {:after-load giggin.core/main
+                                   :http-root  "public"
+                                   :http-port  3000}}}}
