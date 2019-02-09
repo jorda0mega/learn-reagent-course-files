@@ -34,7 +34,7 @@
        [:div.gigs
         [:button.add-gig
          {:on-click #(toggle-modal {:active true
-                                    :gig    {}})}
+                                    :gig    {:id (str "gig-" (random-uuid))}})}
          [:div.add__title
           [:i.icon.icon--plus]
           [:p "Add gig"]]]
